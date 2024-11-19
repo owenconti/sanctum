@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sanctum/compare/v4.0.3...4.x)
+## [Unreleased](https://github.com/laravel/sanctum/compare/v4.0.4...4.x)
+
+## [v4.0.4](https://github.com/laravel/sanctum/compare/v4.0.3...v4.0.4) - 2024-11-15
+
+* [4.x] Add Generics to `HasApiTokens` by [@cosmastech](https://github.com/cosmastech) in https://github.com/laravel/sanctum/pull/544
+* [4.x] Add generics by [@cosmastech](https://github.com/cosmastech) in https://github.com/laravel/sanctum/pull/545
 
 ## [v4.0.3](https://github.com/laravel/sanctum/compare/v4.0.2...v4.0.3) - 2024-09-27
 
