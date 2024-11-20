@@ -4,6 +4,7 @@ namespace Laravel\Sanctum\Tests\Controller;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Request;
+use Laravel\Sanctum\Http\Middleware\AuthenticateSession;
 use Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
 use Laravel\Sanctum\Sanctum;
 use Orchestra\Testbench\Concerns\WithWorkbench;
@@ -23,6 +24,7 @@ class FrontendRequestsAreStatefulTest extends TestCase
             'auth.guards.sanctum.provider' => 'users',
             'auth.providers.users.model' => User::class,
             'database.default' => 'testing',
+            'sanctum.middleware.authenticate_session' => AuthenticateSession::class,
             'sanctum.middleware.encrypt_cookies' => \Illuminate\Cookie\Middleware\EncryptCookies::class,
             'sanctum.middleware.verify_csrf_token' => \Illuminate\Foundation\Http\Middleware\VerifyCsrfToken::class,
         ]);
